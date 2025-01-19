@@ -37,10 +37,10 @@ int main(long long argc, char** argv) {
 	}
 	vector<long long> stones2 = stones;
 
-	//for (long long i = 0; i < 25; i++)
-	//	blink(stones);
+	for (long long i = 0; i < 25; i++)
+		blink(stones);
 
-	//part1ans = stones.size();
+	part1ans = stones.size();
 
 	for (long long n : stones2)
 		part2ans += evolve(n, 75);
